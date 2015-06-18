@@ -29,11 +29,12 @@ knife node list
 
 #### Advanced
 
-In most usecases our chef repo is managed using git, and you may want to use
-berkshelf and your knife.rb may require user-specific config files located in
-your home directory.
+In most usecases our chef repo is managed using git, you may want to keep your
+dependencies at host level and your knife.rb may require user-specific config
+files located in your home directory.
 
-So you can add relevant volume to share you host config
+So you can add any relevant volume to share your host config with the
+container :
 ```bash
 berksconfig="~/.berkshelf"
 chefconfig="~/.chef"        # <-- folder containing user-specific configuration
