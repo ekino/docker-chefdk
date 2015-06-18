@@ -1,0 +1,13 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker build -t ekino/chefdk_circle .
+
+test:
+  pre:
+    - sleep 5
+  override:
+    - docker run ekino/chefdk_circle
