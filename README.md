@@ -29,9 +29,9 @@ knife node list
 
 #### Advanced
 
-In most usecases our chef repo is managed using git, you may want to keep your
-dependencies at host level and your knife.rb may require user-specific config
-files located in your home directory.
+In most usecases our chef repo is managed using git, or you may want to keep
+your cookbooks dependencies at host level, or and your knife.rb may require
+user-specific config files located in your home directory, or....
 
 So you can add any relevant volume to share your host config with the
 container :
