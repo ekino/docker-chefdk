@@ -35,6 +35,7 @@ user-specific config files located in your home directory, or....
 
 So you can add any relevant volume to share your host config with the
 container :
+
 ```bash
 berksconfig="~/.berkshelf"
 chefconfig="~/.chef"        # <-- folder containing user-specific configuration

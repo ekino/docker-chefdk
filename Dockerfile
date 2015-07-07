@@ -27,4 +27,4 @@ RUN apt-get clean
 # presets
 ADD vimrc /root/.vimrc
 VOLUME ["/data"]
-ENTRYPOINT ["bash"]
+CMD ["bash"]
