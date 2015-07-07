@@ -19,7 +19,7 @@ ENV LANG en_US.UTF-8
 RUN locale-gen $LANG
 
 # other tools
-RUN apt-get install vim tig ssh-client -y
+RUN apt-get install -y expect vim tig ssh-client
 
 # cleanup
 RUN apt-get clean
